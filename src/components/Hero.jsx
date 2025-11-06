@@ -1,6 +1,6 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { ArrowDownTrayIcon } from '@heroicons/react/24/outline'
+import React from 'react';
+import { motion } from 'framer-motion';
+import { ArrowDownTrayIcon } from '@heroicons/react/24/outline';
 
 const Hero = () => {
   return (
@@ -21,7 +21,7 @@ const Hero = () => {
             transition={{ delay: 0.5 }}
             className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8"
           >
-            Full MERN Stack Developer
+            Full Stack Developer & UI/UX Enthusiast
           </motion.div>
 
           <motion.p
@@ -42,14 +42,15 @@ const Hero = () => {
           >
             <a
               href="#contact"
-              className="border border-primary-600 text-primary-600 dark:text-primary-400 dark:border-primary-400 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 dark:hover:bg-gray-800 transition-colors flex items-center gap-2"
+              className="bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
             >
               Get In Touch
             </a>
             
+            {/* Updated Resume Download Link */}
             <a
               href="/resume.pdf"
-              download
+              download="Muhammad_Usman_Resume.pdf"
               className="border border-primary-600 text-primary-600 dark:text-primary-400 dark:border-primary-400 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 dark:hover:bg-gray-800 transition-colors flex items-center gap-2"
             >
               <ArrowDownTrayIcon className="w-5 h-5" />
@@ -59,7 +60,7 @@ const Hero = () => {
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
